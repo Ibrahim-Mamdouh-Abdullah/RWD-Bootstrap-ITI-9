@@ -1,0 +1,436 @@
+*:not(i) {
+  font-family: "Playfair Display", serif !important;
+}
+
+.text-primary {
+  color: #15b9d9 !important;
+}
+
+.bg-primary {
+  background-color: #15b9d9 !important;
+}
+
+.text-secondary {
+  color: #efa286 !important;
+}
+
+.bg-secondary {
+  background-color: #efa286 !important;
+}
+
+.bg-primary:hover {
+  color: #15b9d9 !important;
+  background-color: white !important;
+  outline: #15b9d9 1px solid !important;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-item:has(.active) a::after {
+  width: 100%;
+}
+
+.nav-link.active {
+  color: #15b9d9 !important;
+}
+
+.nav-link:hover {
+  color: #15b9d9 !important;
+  transition: all 0.4s;
+}
+
+.nav-item:hover.nav-item a::after {
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.nav-item .nav-link.active a::after {
+  width: 100%;
+}
+
+.nav-item a::after {
+  content: "";
+  height: 4px;
+  width: 0%;
+  display: block;
+  background-color: #15b9d9 !important;
+  position: absolute;
+  bottom: -1.4rem;
+  left: 0;
+}
+
+header .carousel-item img {
+  filter: brightness(0.6);
+}
+
+img {
+  width: 100%;
+}
+
+.card {
+  padding: 0;
+  border-color: #15b9d9;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 1.2rem;
+}
+
+.our-blogs .cards {
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
+section {
+  padding-block: 50px;
+}
+
+section h1::after {
+  content: "";
+  display: block;
+  width: 5rem;
+  height: 2px;
+  background-color: #15b9d9;
+  position: absolute;
+  right: -6rem;
+  top: 50%;
+}
+
+section h1::before {
+  content: "";
+  display: block;
+  width: 5rem;
+  height: 2px;
+  background-color: #15b9d9;
+  position: absolute;
+  left: -6rem;
+  top: 50%;
+}
+
+/* Start About-Us Section */
+section[class="about-us"] h1::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 2px;
+  background-color: #15b9d9;
+  position: absolute;
+  right: -6rem;
+  top: 50%;
+}
+
+section[class="about-us"] h1::before {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 2px;
+  background-color: #15b9d9;
+  position: absolute;
+  left: 13.6rem;
+  top: 72%;
+}
+
+/* End About-Us Section */
+
+/* Start contact-us Section */
+section[class="contact-us"] h1::after,
+section[class="testimonial"] h1::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  right: -7rem;
+  top: 50%;
+}
+
+section[class="contact-us"] h1::before,
+section[class="testimonial"] h1::before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  left: -7rem;
+  top: 50%;
+}
+/* End contact-us Section */
+.head-section h1 {
+  width: fit-content;
+}
+
+.head-section + p {
+  font-size: 3rem;
+}
+
+.contact-us .head-section + p {
+  font-size: 1rem;
+}
+
+.choose-us .card {
+  height: fit-content;
+}
+
+.get-app {
+  background: linear-gradient(#dee2e6c7, #dee2e6c4), url(img/carousel-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.get-app input,
+.get-app select,
+.get-app textarea {
+  border-color: #15b9d9;
+  padding: 0.7rem;
+  background-color: transparent;
+  color: rgb(100, 100, 100);
+}
+
+.get-app form {
+  background-color: #efa286ad;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+@keyframes get-app-img {
+  30% {
+    box-shadow: 1px 1px 1px 12.5px #15b9d9;
+  }
+
+  100% {
+    box-shadow: 1px 1px 1px 25px #15b8d900;
+  }
+}
+
+.get-app-img button {
+  animation: get-app-img 1.1s infinite linear;
+}
+
+.testimonial {
+  background: linear-gradient(#15b8d9ce, #15b8d9ce), url(img/carousel-2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.testimonial .carousel-item > div {
+  margin-bottom: 3rem;
+}
+footer {
+  background: linear-gradient(rgb(35 30 30 / 92%), rgb(35 30 30)),
+    url(assets/img/fa-massage-featured-image-2-1500x1000.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+footer a {
+  all: unset;
+}
+@media (min-width: 200px) {
+  :root {
+    font-size: 12px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    font-size: 16px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-us-content {
+    margin-top: 3rem;
+  }
+  section[class="about-us"] h1::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2px;
+    background-color: #15b9d9;
+    position: absolute;
+    right: -7.1rem;
+    top: 50%;
+  }
+  section[class="about-us"] h1::before {
+    content: "";
+    display: block;
+    width: 8rem;
+    height: 2px;
+    background-color: #15b9d9;
+    position: absolute;
+    left: 13.5rem;
+    top: 72%;
+  }
+  /* Start Get-App Section */
+  section[class="get-app"] h1::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #15b9d9;
+    position: absolute;
+    right: -4.5rem;
+    top: 50%;
+  }
+
+  section[class="get-app"] h1::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2px;
+    background-color: #15b9d9;
+    position: absolute;
+    left: 19.8rem;
+    top: 72%;
+  }
+  /* End Get-App Section */
+}
+
+@media (min-width: 992px) {
+  .about-us-content {
+    margin-top: 3rem;
+  }
+  section[class="about-us"] h1::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2px;
+    background-color: #15b9d9;
+    position: absolute;
+    right: -6.4rem;
+    top: 50%;
+  }
+  section[class="about-us"] h1::before {
+    content: "";
+    display: block;
+    width: 8rem;
+    height: 2px;
+    background-color: #15b9d9;
+    position: absolute;
+    left: 14rem;
+    top: 72%;
+  }
+  /* Start Get-App Section */
+  section[class="get-app"] h1::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #15b9d9;
+    position: absolute;
+    right: -3.5rem;
+    top: 50%;
+  }
+
+  section[class="get-app"] h1::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2px;
+    background-color: #15b9d9;
+    position: absolute;
+    left: 19.8rem;
+    top: 72%;
+  }
+  /* End Get-App Section */
+}
+@media (max-width: 992px) {
+
+  
+.nav-item a::after {
+  content: "";
+  height: 1px;
+  width: 0%;
+  display: block;
+  background-color: #15b9d9 !important;
+  position: absolute;
+  bottom: -0.2rem;
+  left: 0;
+}
+
+}
+@media (max-width: 768px) {
+  .about-us-content {
+    margin-top: 3rem;
+  }
+  section[class="about-us"] h1::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2px;
+    background-color: #15b9d9;
+    position: absolute;
+    right: -7.1rem;
+    top: 50%;
+  }
+  section[class="about-us"] h1::before {
+    content: "";
+    display: block;
+    width: 8rem;
+    height: 2px;
+    background-color: #15b9d9;
+    position: absolute;
+    left: 10.3rem;
+    top: 72%;
+  }
+  /* Start Get-App Section */
+  section[class="get-app"] h1::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #15b9d9;
+    position: absolute;
+    right: -4.5rem;
+    top: 50%;
+  }
+
+  section[class="get-app"] h1::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2px;
+    background-color: #15b9d9;
+    position: absolute;
+    left: 18.8rem;
+    top: 72%;
+  }
+  /* End Get-App Section */
+
+  
+.nav-item a::after {
+  content: "";
+  height: 1px;
+  width: 0%;
+  display: block;
+  background-color: #15b9d9 !important;
+  position: absolute;
+  bottom: -0.7rem;
+  left: 0;
+}
+
+}
+
+.bg-breadcrumb {
+  height: 20rem;
+  background: linear-gradient(rgba(43, 41, 41, 0.785), rgba(43, 41, 41, 0.785)),
+    url(img/AAEsthetiqueBeautySpaPromotionalVideo-ezgif.com-speed.gif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  place-items: center;
+}
+
+.contact-us {
+  background: linear-gradient(#15b8d9ce, #15b8d9ce), url(img/carousel-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
